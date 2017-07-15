@@ -24,4 +24,17 @@ a) when we want to define a class that will have one behavior, that is similar t
    If we create some hebaviour like  a) Not flying  b) flying with wings  c) flying super fast.
    Then it will be helpful in future, if you want a sub class then it will be able to choose a behavior from any of the behaviours. 
    You can be able to dynamically create whole new different types of flying types Animal
+   
+b) When you need to use one of several behaviors dynamically (Discussed above)
 
+C) If we see any code has long lists of conditionals to use some strategies
+
+Merits: 
+
+1. It Avoid duplicate code.
+2. keeps class change from forcing other class changes.
+3. Also allows to hide complicated or secret code from the user.
+
+Demerits:
+
+1. There is only one negative you're going to have an increased number of object and class if you use the strategy pattern.
