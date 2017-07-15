@@ -22,8 +22,9 @@ Where to use:
       Because some animal can fly (like Bird) and some can't (like Dog)
 
       If we create some hebaviour like  a) Not flying  b) flying with wings  c) flying super fast.
-      Then it will be helpful in future, if you want a sub class then it will be able to choose a behavior from any of the behaviours. 
-      You can be able to dynamically create whole new different types of flying types Animal
+      Then it will be helpful in future, if you want a sub class then it will be able to choose a behavior 
+      from any of the behaviours. You can be able to dynamically create whole new different types of flying 
+      types Animal.
    
    b) When you need to use one of several behaviors dynamically (Discussed above)
 
