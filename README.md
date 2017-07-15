@@ -16,18 +16,18 @@ Tips:
 
 Where to use: 
 
-a) when we want to define a class that will have one behavior, that is similar to all the other behaviors in a list.
-   
-   Example: Animal is a super class, and if we want to add a fly() method in it, then we should be careful.
-   Because some animal can fly (like Bird) and some can't (like Dog)
-   
-   If we create some hebaviour like  a) Not flying  b) flying with wings  c) flying super fast.
-   Then it will be helpful in future, if you want a sub class then it will be able to choose a behavior from any of the behaviours. 
-   You can be able to dynamically create whole new different types of flying types Animal
-   
-b) When you need to use one of several behaviors dynamically (Discussed above)
+   a) when we want to define a class that will have one behavior, that is similar to all the other behaviors in a list.
 
-C) If we see any code has long lists of conditionals to use some strategies
+      Example: Animal is a super class, and if we want to add a fly() method in it, then we should be careful.
+      Because some animal can fly (like Bird) and some can't (like Dog)
+
+      If we create some hebaviour like  a) Not flying  b) flying with wings  c) flying super fast.
+      Then it will be helpful in future, if you want a sub class then it will be able to choose a behavior from any of the behaviours. 
+      You can be able to dynamically create whole new different types of flying types Animal
+   
+   b) When you need to use one of several behaviors dynamically (Discussed above)
+
+   c) If we see any code has long lists of conditionals to use some strategies
 
 Merits: 
 
