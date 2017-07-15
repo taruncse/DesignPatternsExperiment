@@ -20,3 +20,8 @@ a) when we want to define a class that will have one behavior, that is similar t
    
    Example: Animal is a super class, and if we want to add a fly() method in it, then we should be careful.
    Because some animal can fly (like Bird) and some can't (like Dog)
+   
+   If we create some hebaviour like  a) Not flying  b) flying with wings  c) flying super fast.
+   Then it will be helpful in future, if you want a sub class then it will be able to choose a behavior from any of the behaviours. 
+   You can be able to dynamically create whole new different types of flying types Animal
+
