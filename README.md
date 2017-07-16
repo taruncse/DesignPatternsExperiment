@@ -39,3 +39,26 @@ Merits:
 Demerits:
 
 1. There is only one negative you're going to have an increased number of object and class if you use the strategy pattern.
+
+
+
+### OBSERVER DESIGN PATTERN :
+
+Source of learning : https://www.youtube.com/watch?v=wiQdrH2YpT4
+
+Discussion:
+
+Where to use: 
+1. When we need many other object to recive update when another object changes.
+      Example: Let's say we have a subject of publisher object , that is going to represent thousands of individual 
+      stocks in stock market if you need to sent updates to multiple observers or subscribers you would use observer 
+      pattern to do that.
+      
+Merits:
+   1. Loose coupling.
+   2. The subject and the publisher does not need to know anything about the observers or subscribers.
+   
+Demerits: 
+   1. Subject or publisher may send updates that don't matter to observers that are subscribed.
+
+
