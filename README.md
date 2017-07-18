@@ -84,3 +84,28 @@ Merits:
 Demerits:
    1. You're going to have an increased number of object and class if you use the strategy pattern.
    
+
+### ABSTRACT FACTORY DESIGN PATTERN :
+
+Source of learning: https://www.youtube.com/watch?v=xbjAsdAK4xQ&t=104s#t=1.283876
+
+Discussion:
+    It is like a factory but everything is encapsulated, the method that orders the object the factories that build 
+    the object the final objects and the final objects contain objects that use the strategy pattern.
+    
+Where to use: 
+   1.You want to use them whenever you want to have many objects that can be added or changed dynamically 
+     during the runtime.
+
+Merits:
+   1. It allows you to create families related objects without specifying a concrete class.
+   2. It provide in ton of flexibility.
+   3. With an abstract Factory model anything you can imagine and have those objects easily 
+      interact with numerous other objects through common interfaces.
+
+Demerits:
+   1. The only bad thing about an abstract factory is it can get very complicated.
+
+   
+      
+   
