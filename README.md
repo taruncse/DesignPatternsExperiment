@@ -96,7 +96,7 @@ Discussion:
     
 Where to use: 
 
-   1.You want to use them whenever you want to have many objects that can be added or changed dynamically 
+   1. You want to use them whenever you want to have many objects that can be added or changed dynamically 
      during the runtime.
 
 Merits:
