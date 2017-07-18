@@ -90,10 +90,12 @@ Demerits:
 Source of learning: https://www.youtube.com/watch?v=xbjAsdAK4xQ&t=104s#t=1.283876
 
 Discussion:
+
     It is like a factory but everything is encapsulated, the method that orders the object the factories that build 
     the object the final objects and the final objects contain objects that use the strategy pattern.
     
 Where to use: 
+
    1.You want to use them whenever you want to have many objects that can be added or changed dynamically 
      during the runtime.
 
