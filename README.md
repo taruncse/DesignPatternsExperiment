@@ -65,3 +65,22 @@ Demerits:
    1. Subject or publisher may send updates that don't matter to observers that are subscribed.
 
 
+### FACTORY/SIMPLE FACTORY DESIGN PATTERN :
+
+Source of learning: https://www.youtube.com/watch?v=ub0DXaeV6hA&t=104s
+
+Discussion:
+
+Where to use: 
+   1. You would use the factory pattern, whenever you would want a method to return one of several possible 
+      classes that share a common superclass.
+   2. When you don't know ahead of time what class objects you might need. 
+   3. You would aslo use a factory pattern to centralise class selection code, when you don't want the user to have to know       every single potential subclass.
+
+Merits:
+   1. We want the capability to have classes chosen at runtime and that's what the factory pattern provides for us.
+   2. Encapsulate object creation.
+   
+Demerits:
+   1. You're going to have an increased number of object and class if you use the strategy pattern.
+   
