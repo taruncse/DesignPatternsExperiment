@@ -109,5 +109,23 @@ Demerits:
    1. The only bad thing about an abstract factory is it can get very complicated.
 
    
-      
+  ### SINGLETON DESIGN PATTERN :    
    
+Source of learning: https://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons
+                    https://www.codeproject.com/Articles/307233/Singleton-Pattern-Positive-and-Negative-Aspects
+
+Discussion:
+
+Where to use: 
+
+1. It is used when you want to elemenate the option of instantiating more than one object.
+
+Merits:
+
+ 1. One of the toughest issues to debug is the one created by the multiple instances of a class which manages the state of a single resource. It is highly desirable if we can use some Design Pattern to control the access to that shared resource. The Singleton pattern fits the bill perfectly to solve this scenario; by wrapping a singleton class around this problem ensures that there will be only one instance of the class at any given time. A most common and clichéd example for a singleton class is the one used for logging purposes where the whole application needs only one logger instance at anytime.
+
+Demerits:
+
+ 1. They are generally used as a global instance, why is that so bad? Because you hide the dependencies of your application in your code, instead of exposing them through the interfaces. Making something global to avoid passing it around is a code smell.
+ 2. They inherently cause code to be tightly coupled. This makes faking them out under test rather difficult in many cases.
+
