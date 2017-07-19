@@ -119,6 +119,7 @@ Discussion:
 Where to use: 
 
 1. It is used when you want to elemenate the option of instantiating more than one object.
+2. "Synchronized" helps us to build a proper control on shared object , when it accessed by Thread.
 
 Merits:
 
