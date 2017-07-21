@@ -11,7 +11,7 @@ public class Utility {
 
 
     private enum enumData{
-        STRATEGY,OBSERVER,SIMPLE_FACTORY,ABSTRACT_FACTORY,SINGLETON
+        STRATEGY,OBSERVER,SIMPLE_FACTORY,ABSTRACT_FACTORY,SINGLETON,PROTOTYPE,BUILDER,REFLECTION,DECORATOR
     }
 
     public static ArrayList<PatternDataModel> getPatterns(){
