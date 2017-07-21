@@ -9,6 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:gravity="center"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:textSize="@dimen/row_txt_size"
         android:layout_weight="0.12" />
 </LinearLayout>

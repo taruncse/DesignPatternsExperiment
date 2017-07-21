@@ -7,22 +7,21 @@ import java.util.ArrayList;
  */
 
 public class Utility {
-    private static final String strategyPattern = "STRATEGY";
-    private static final String observerPattern = "OBSERVER";
-    private static final String simpleFactoryPattern = "SIMPLE FACTORY";
-    private static final String abstractFactoryPattern = "ABSTRACT FACTORY";
-    private static final String singletonPattern = "SINGLETON";
 
-    public static ArrayList<PatternDataModel> patternDataList = new ArrayList<PatternDataModel>() {{
-        add(getPattern(strategyPattern));
-        add(getPattern(observerPattern));
-        add(getPattern(simpleFactoryPattern));
-        add(getPattern(abstractFactoryPattern));
-        add(getPattern(singletonPattern));
-    }};
-    private static PatternDataModel getPattern(String pattern){
-        PatternDataModel patternDataModel = new PatternDataModel();
-        patternDataModel.setNameOfThePatter(pattern);
-        return patternDataModel;
+
+
+    private enum enumData{
+        STRATEGY,OBSERVER,SIMPLE_FACTORY,ABSTRACT_FACTORY,SINGLETON
+    }
+
+    public static ArrayList<PatternDataModel> getPatterns(){
+        ArrayList<PatternDataModel>patternDataList = new ArrayList<>();
+        for (enumData aData : enumData.values()){
+            PatternDataModel patternDataModel = new PatternDataModel();
+            patternDataModel.setNameOfThePatter(aData.name());
+            patternDataList.add(patternDataModel);
+        }
+
+        return patternDataList;
     }
 }

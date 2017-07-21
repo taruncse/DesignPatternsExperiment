@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         lvPattern = (ListView)findViewById(R.id.lvPattern);
-        PatternListAdapter adapter = new PatternListAdapter(this,Utility.patternDataList);
+        PatternListAdapter adapter = new PatternListAdapter(this,Utility.getPatterns());
         lvPattern.setAdapter(adapter);
     }
 }
