@@ -165,3 +165,42 @@ Demerits:
 
 1. Hides concrete product classes from the client
 2. Similar consequences as Abstract Factory and Builder
+
+### JAVA REFLECTION :
+Source of learning: 
+
+
+Discussion:
+
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### DECORATOR DESIGN PATTERN :
+Source of learning: 
+  1. https://goo.gl/VWJrY3
+  2. https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm
+  
+Discussion:
+  Decorator pattern allows a user to add new functionality to an existing object without altering its structure.
+
+Where to use: 
+ 
+  1. When we need to add some behavior without recompiling source code.
+  2. you can wrap a stream with a stream to get added functionality.
+Merits: 
+
+  1. This pattern creates a decorator class which wraps the original class and provides additional 
+     functionality keeping class methods signature intact.
+  2. Provides a more flexible way to add responsibilities to a class than by using inheritance, since 
+     it can add these responsibilities to selected instances of the class.
+  3. Allows to customize a class without creating subclasses high in the inheritance hierarchy. 
+  
+Demerits:
+
+  1. A Decorator and its enclosed component are not identical. Thus, tests for object types will fail. 
+  2. Decorators can lead to a system with “lots of little objects” that all look alike to the programmer 
+     trying to maintain the code
