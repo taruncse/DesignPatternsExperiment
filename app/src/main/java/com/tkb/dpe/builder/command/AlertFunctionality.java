@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class AlertFunctionality {
 
     public void move(Context context){
+
         Toast.makeText(context,"Moving",Toast.LENGTH_LONG).show();
     }
     public void Edit(Context context){

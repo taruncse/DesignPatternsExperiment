@@ -1,0 +1,10 @@
+package com.tkb.dpe;
+
+/**
+ * Created by tkb on 2017-07-24.
+ */
+
+public enum PatternData {
+    STRATEGY,OBSERVER,SIMPLE_FACTORY,ABSTRACT_FACTORY,SINGLETON,PROTOTYPE,BUILDER,REFLECTION,DECORATOR,COMMAND
+
+}

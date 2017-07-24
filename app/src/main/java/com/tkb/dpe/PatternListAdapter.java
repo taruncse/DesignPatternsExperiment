@@ -7,20 +7,20 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by tarun on 7/21/17.
  */
 
-public class PatternListAdapter extends ArrayAdapter<PatternDataModel> {
+public class PatternListAdapter extends ArrayAdapter<PatternData> {
     private final Context context;
-    private final ArrayList<PatternDataModel> patternList;
 
-    public PatternListAdapter(Context context, ArrayList<PatternDataModel> patternList) {
-        super(context,R.layout.row_list_view,patternList);
+
+    public PatternListAdapter(Context context,  List<PatternData> patternDataList) {
+        super(context,R.layout.row_list_view,patternDataList);
         this.context = context;
-        this.patternList = patternList;
+
     }
 
     @Override
@@ -31,7 +31,7 @@ public class PatternListAdapter extends ArrayAdapter<PatternDataModel> {
         View rowView = inflater.inflate(R.layout.row_list_view, parent, false);
         TextView tvName = (TextView) rowView.findViewById(R.id.tvName);
 
-        tvName.setText(patternList.get(position).getNameOfThePatter());
+        tvName.setText(getItem(position).name());
 
         return rowView;
     }
