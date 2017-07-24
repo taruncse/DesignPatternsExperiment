@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">"DesignPatternsExperiment "</string>
+    <string name="title_activity_command">CommandActivity</string>
+    <string name="move">MOVE</string>
+    <string name="edit">EDIT</string>
 </resources>
