@@ -12,12 +12,21 @@ import com.tkb.dpe.R;
 
 public class AlertBuilder {
 
-    public static void confirm(Context context, String title, String msg, DialogInterface.OnClickListener listener) {
+    public static void leftAlert(Context context, String title, String msg, DialogInterface.OnClickListener listener) {
         new AlertDialog.Builder(context)
                 .setTitle(title)
                 .setMessage(msg)
                 .setPositiveButton(R.string.edit, listener)
                 .setNeutralButton(R.string.move, listener)
+                .setNegativeButton(android.R.string.cancel,null)
+                .show();
+    }
+
+    public static void rigtAlert(Context context, String title, String msg, DialogInterface.OnClickListener listener) {
+        new AlertDialog.Builder(context)
+                .setTitle(title)
+                .setMessage(msg)
+                .setPositiveButton(R.string.edit, listener)
                 .setNegativeButton(android.R.string.cancel,null)
                 .show();
     }
