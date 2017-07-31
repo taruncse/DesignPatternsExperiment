@@ -204,3 +204,17 @@ Demerits:
   1. A Decorator and its enclosed component are not identical. Thus, tests for object types will fail. 
   2. Decorators can lead to a system with “lots of little objects” that all look alike to the programmer 
      trying to maintain the code
+
+### FLYWEIGHT PATTERN:
+Source of learning: 
+https://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm
+https://www.youtube.com/watch?v=0vV-R2926ss&index=19&list=PLF206E906175C7E07
+
+Discussion:
+
+Where to use: 
+
+
+Merits: 
+
+Demerits:
