@@ -7,16 +7,43 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.tkb.dpe.R;
 
 public class ChainOfResActivity extends Activity {
-
+    Button btn_transection;
+    EditText et_paypal,et_bank,et_skrill;
+    TextView tv_widthraw;
+    Bank bank;
+    Paypal paypal;
+    Skrill skrill;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chain_of_res);
 
+        initialization ();
+
+        btn_transection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bank = new Bank(Double.parseDouble(et_bank.getText().toString()));
+                paypal = new Paypal(Double.parseDouble(et_paypal.getText().toString()));
+                skrill =   new Skrill(Double.parseDouble(et_skrill.getText().toString()));
+
+            }
+        });
+    }
+
+    private void initialization() {
+        btn_transection = (Button)findViewById(R.id.btn_transection);
+        et_bank = (EditText)findViewById(R.id.et_bank);
+        et_paypal = (EditText)findViewById(R.id.et_paypal);
+        et_skrill = (EditText)findViewById(R.id.et_paypal);
+        tv_widthraw = (TextView)findViewById(R.id.tv_result);
     }
 
 }
