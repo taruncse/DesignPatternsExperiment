@@ -5,8 +5,7 @@ package com.tkb.dpe.chain;
  */
 
 public class Skrill extends Account {
-    protected double balance;
-    public Skrill(double balance) {
+    public Skrill(long balance) {
         this.balance = balance;
     }
 }

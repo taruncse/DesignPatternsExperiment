@@ -6,15 +6,18 @@ package com.tkb.dpe.chain;
 
 public abstract class Account {
 
-    double balance;
+    long balance;
     Account successor;
 
     public void pay(double amount){
         if (canPay(amount)){
-            System.out.println("You can pay with: "+this.getClass().getName());
-        }else {
-            System.out.println("You can't pay with: "+this.getClass().getName());
+            System.out.println("You can pay with: "+this.getClass().getSimpleName());
+        }else if (successor!=null){
+            System.out.println("You can't pay with: "+this.getClass().getSimpleName());
             successor.pay(amount);
+        }else {
+            System.out.println("You don't have much money in your account: ");
+
         }
     }
 
@@ -22,7 +25,8 @@ public abstract class Account {
         this.successor = account;
     }
 
+
     public boolean canPay (double amount){
-        return balance>=amount;
+        return this.balance>=amount;
     }
 }

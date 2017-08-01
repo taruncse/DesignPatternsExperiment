@@ -4,9 +4,8 @@ package com.tkb.dpe.chain;
  * Created by tarun on 8/2/17.
  */
 
-public class Paypal {
-    protected double balance;
-    public Paypal(double balance) {
+public class Paypal extends Account {
+    public Paypal(long balance) {
         this.balance = balance;
     }
 }
