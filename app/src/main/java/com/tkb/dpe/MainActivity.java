@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.tkb.dpe.builder.CommandActivity;
+import com.tkb.dpe.chain.ChainOfResActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (patternDataList.get(position)==(PatternData.COMMAND)){
                     startActivity(new Intent(MainActivity.this, CommandActivity.class));
+                }else if (patternDataList.get(position)==PatternData.CHAIN_OF_RESPONSIBILITY){
+                    startActivity(new Intent(MainActivity.this, ChainOfResActivity.class));
                 }
             }
         });

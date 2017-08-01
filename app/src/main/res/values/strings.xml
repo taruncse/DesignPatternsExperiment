@@ -3,4 +3,5 @@
     <string name="title_activity_command">CommandActivity</string>
     <string name="move">MOVE</string>
     <string name="edit">EDIT</string>
+    <string name="title_activity_chain_of_res">ChainOfResActivity</string>
 </resources>

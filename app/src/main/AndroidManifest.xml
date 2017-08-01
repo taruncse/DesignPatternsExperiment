@@ -19,6 +19,10 @@
         <activity
             android:name=".builder.CommandActivity"
             android:label="@string/title_activity_command"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".chain.ChainOfResActivity"
+            android:label="@string/title_activity_chain_of_res"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
