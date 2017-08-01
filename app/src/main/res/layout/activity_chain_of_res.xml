@@ -25,7 +25,7 @@
         android:layout_marginTop="33dp"
         android:ems="10"
         android:hint="Deposit to Paypal"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/et_bank"
@@ -36,7 +36,7 @@
         android:layout_marginTop="41dp"
         android:ems="10"
         android:hint="Deposit to Bank"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/et_skrill"
@@ -47,18 +47,18 @@
         android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="Deposit to Skrill"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/et_widthraw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/et_skrill"
+        android:layout_alignStart="@+id/et_skrill"
         android:layout_below="@+id/et_skrill"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="51dp"
         android:ems="10"
         android:hint="Enter widthraw amount"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <TextView
         android:id="@+id/tv_result"
