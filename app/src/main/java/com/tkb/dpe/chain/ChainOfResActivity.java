@@ -30,6 +30,7 @@ public class ChainOfResActivity extends Activity {
         btn_transection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                tv_result.setText("");
                 paypal = new Paypal(Long.parseLong(et_paypal.getText().toString()));
 
                 bank = new Bank(Long.parseLong(et_bank.getText().toString()));
@@ -37,7 +38,12 @@ public class ChainOfResActivity extends Activity {
 
                 paypal.setNext(bank);
                 bank.setNext(skrill);
-                paypal.pay(Double.parseDouble(et_widthraw.getText().toString()));
+                paypal.pay(Double.parseDouble(et_widthraw.getText().toString()), new Display() {
+                    @Override
+                    public void show(String message) {
+                        tv_result.setText(tv_result.getText().toString()+"\n "+message);
+                    }
+                });
             }
         });
     }

@@ -9,20 +9,29 @@ public abstract class Account {
     long balance;
     Account successor;
 
-    public void pay(double amount){
+    public void pay(double amount, Display message){
         if (canPay(amount)){
-            System.out.println("You can pay with: "+this.getClass().getSimpleName());
-        }else if (successor!=null){
-            System.out.println("You can't pay with: "+this.getClass().getSimpleName());
-            successor.pay(amount);
-        }else {
-            System.out.println("You don't have much money any of your account: ");
+            if (message!=null){
+                message.show("You can pay with: "+this.getClass().getSimpleName());
+            }
 
+        }else if (hasNext()){
+            message.show("You can't pay with: "+this.getClass().getSimpleName());
+            successor.pay(amount,message);
+        }else {
+
+            if (message!=null){
+                message.show("You don't have much money any of your account: "+this.getClass().getSimpleName());
+            }
         }
     }
 
     public void setNext( Account account){
         this.successor = account;
+    }
+
+    public boolean hasNext(){
+       return successor!=null;
     }
 
 
