@@ -218,3 +218,17 @@ Where to use:
 Merits: 
 
 Demerits:
+
+### INTERPRETER PATTERN:
+Source of learning: 
+http://www.journaldev.com/1635/interpreter-design-pattern-in-java-example-tutorial
+https://dzone.com/articles/design-patterns-uncovered-14
+
+Discussion:
+
+Where to use: 
+
+
+Merits: 
+
+Demerits:
