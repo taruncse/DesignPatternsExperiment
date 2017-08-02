@@ -16,7 +16,7 @@ public abstract class Account {
             System.out.println("You can't pay with: "+this.getClass().getSimpleName());
             successor.pay(amount);
         }else {
-            System.out.println("You don't have much money in your account: ");
+            System.out.println("You don't have much money any of your account: ");
 
         }
     }

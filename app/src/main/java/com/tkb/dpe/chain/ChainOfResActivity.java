@@ -37,7 +37,6 @@ public class ChainOfResActivity extends Activity {
 
                 paypal.setNext(bank);
                 bank.setNext(skrill);
-
                 paypal.pay(Double.parseDouble(et_widthraw.getText().toString()));
             }
         });
@@ -47,7 +46,7 @@ public class ChainOfResActivity extends Activity {
         btn_transection = (Button)findViewById(R.id.btn_transection);
         et_bank = (EditText)findViewById(R.id.et_bank);
         et_paypal = (EditText)findViewById(R.id.et_paypal);
-        et_skrill = (EditText)findViewById(R.id.et_paypal);
+        et_skrill = (EditText)findViewById(R.id.et_skrill);
         et_widthraw = (EditText)findViewById(R.id.et_widthraw);
         tv_result = (TextView)findViewById(R.id.tv_result);
     }
