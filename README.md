@@ -372,13 +372,12 @@ Merits:
 
 Demerits:
 
-### INTERPRETER PATTERN:
+### FLUENT INTERFACE:
 Source of learning: 
-http://www.journaldev.com/1635/interpreter-design-pattern-in-java-example-tutorial
-https://dzone.com/articles/design-patterns-uncovered-14
 
 Discussion:
-
+A Fluent Interface is an object oriented API that provides "more readable" code.
+A fluent interface allows you to chain method calls, which results in less typed characters when applying multiple operations on the same object.
 Where to use: 
 
 
