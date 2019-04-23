@@ -68,6 +68,7 @@ Demerits:
 ### FACTORY/SIMPLE FACTORY DESIGN PATTERN :
 
 Source of learning: https://www.youtube.com/watch?v=ub0DXaeV6hA&t=104s
+https://www.tutorialspoint.com/design_pattern/factory_pattern.htm
 
 Discussion:
 
@@ -76,6 +77,9 @@ Where to use:
       classes that share a common superclass.
    2. When you don't know ahead of time what class objects you might need. 
    3. You would aslo use a factory pattern to centralise class selection code, when you don't want the user to have to know       every single potential subclass.
+   4. When the implementation of an interface or an abstract class is expected to change frequently
+   5. When the current implementation cannot comfortably accommodate new change
+   6. When the initialization process is relatively simple, and the constructor only requires a handful of parameters
 
 Merits:
    1. We want the capability to have classes chosen at runtime and that's what the factory pattern provides for us.
@@ -84,6 +88,62 @@ Merits:
 Demerits:
    1. You're going to have an increased number of object and class if you use the strategy pattern.
    
+Example: 
+
+```
+public interface Shape {
+   void draw();
+}
+
+public class Rectangle implements Shape {
+
+   @Override
+   public void draw() {
+      System.out.println("Inside Rectangle::draw() method.");
+   }
+}
+
+public class Square implements Shape {
+
+   @Override
+   public void draw() {
+      System.out.println("Inside Square::draw() method.");
+   }
+}
+
+public class ShapeFactory {
+	
+   //use getShape method to get object of type shape 
+   public Shape getShape(String shapeType){
+      if(shapeType == null){
+         return null;
+      }		
+      if(shapeType.equalsIgnoreCase("RECTANGLE")){
+         return new Rectangle();
+         
+      } else if(shapeType.equalsIgnoreCase("SQUARE")){
+         return new Square();
+      }
+      
+      return null;
+   }
+}
+
+
+public class FactoryPatternDemo {
+
+   public static void main(String[] args) {
+      ShapeFactory shapeFactory = new ShapeFactory();
+      
+      //get an object of Rectangle and call its draw method.
+      Shape shape2 = shapeFactory.getShape("RECTANGLE");
+
+      //call draw method of Rectangle
+      shape2.draw();
+   }
+}
+
+```
 
 ### ABSTRACT FACTORY DESIGN PATTERN :
 
