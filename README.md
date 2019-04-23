@@ -139,7 +139,7 @@ Discussion:
 Builder pattern is a creational design pattern it means its solves problem related to object creation.Best example would be an AlertDialog class from AOSP, StringBuilder, DocumentBuilder best to see how the compex object can be created.
 
 Example : 
-
+```
 public static class Builder {
         private String firstName;
         private String middleName;
@@ -180,6 +180,7 @@ public static class Builder {
         .setHeight(6)
         .setAge(19)
         .build();
+        ```
 Where to use: 
 
 
