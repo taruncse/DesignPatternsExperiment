@@ -132,15 +132,63 @@ Demerits:
 
 ### BUILDER DESIGN PATTERN :
 Source of learning: 
+https://medium.com/@ajinkyabadve/builder-design-patterns-in-java-1ffb12648850
 
 Discussion:
 
+Builder pattern is a creational design pattern it means its solves problem related to object creation.Best example would be an AlertDialog class from AOSP, StringBuilder, DocumentBuilder best to see how the compex object can be created.
+
+Example : 
+
+public static class Builder {
+        private String firstName;
+        private String middleName;
+        private String lastName;
+        private int age;
+        private String fathersName;
+        private String mothersName;
+        private double height;
+        private double weight;
+        public Builder(){}
+        public Builder setFirstName(String firstName) {
+            this.firstName = firstName;
+            return this;
+        }
+
+        public Builder setMiddleName(String middleName) {
+            this.middleName = middleName;
+            return this;
+        }
+
+        public Builder setLastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        ...
+
+        public Person build() {
+            return new Person(firstName, middleName, lastName, age, fathersName, mothersName, height, weight);
+        }
+    }
+    ............................................................................................
+    Build a Person object using Person builder.
+    
+    Person person = new Person.Builder()
+        .setAge(5)
+        .setFirstName("Bob")
+        .setHeight(6)
+        .setAge(19)
+        .build();
 Where to use: 
 
 
 Merits: 
+1) Code is more maintainable if number of fields required to create object is more than 4 or 5.
+2) You can force immutability to the object once its created.
 
 Demerits:
+1) Builder pattern is verbose and requires code duplication as Builder needs to copy all fields from Original or Item class.
 
 ### PROTOTYPE DESIGN PATTERN :
 Source of learning: 1. https://www.tutorialspoint.com/design_pattern/prototype_pattern.htm
