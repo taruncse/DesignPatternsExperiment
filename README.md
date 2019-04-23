@@ -344,3 +344,44 @@ Where to use:
 Merits: 
 
 Demerits:
+
+### MONOSTATE PATTERN:
+Source of learning: 
+https://stackoverflow.com/questions/887317/monostate-vs-singleton
+
+Discussion:
+
+monostate and singleton are two faces of the same medal (global state):
+
+monostate forces a behaviour (only one value along all class instances)
+singleton forces a structural constraint (only one instance)
+singleton usage is not transparent
+
+```
+Singleton singleton = Singleton.getInstance();
+monostate usage is transparent
+
+MonoState m1 = new MonoState();
+MonoState m2 = new MonoState(); // same state of m1 
+
+```
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### INTERPRETER PATTERN:
+Source of learning: 
+http://www.journaldev.com/1635/interpreter-design-pattern-in-java-example-tutorial
+https://dzone.com/articles/design-patterns-uncovered-14
+
+Discussion:
+
+Where to use: 
+
+
+Merits: 
+
+Demerits:
