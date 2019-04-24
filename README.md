@@ -384,3 +384,120 @@ Where to use:
 Merits: 
 
 Demerits:
+
+### ADAPTER PATTERN:
+Source of learning: 
+https://dzone.com/articles/adapter-design-pattern-in-java
+
+Discussion:
+The adapter design pattern is a structural design pattern that allows two unrelated/uncommon interfaces to work together. In other words, the adapter pattern makes two incompatible interfaces compatible without changing their existing code.
+
+Interfaces may be incompatible, but the inner functionality should match the requirement.
+
+The adapter pattern is often used to make existing classes work with others without modifying their source code.
+
+Adapter patterns use a single class (the adapter class) to join functionalities of independent or incompatible interfaces/classes.
+
+The adapter pattern also is known as the wrapper, an alternative naming shared with the decorator design pattern.
+
+This pattern converts the (incompatible) interface of a class (the adaptee) into another interface (the target) that clients require.
+
+The adapter pattern also lets classes work together, which, otherwise, couldn't have worked, because of the incompatible interfaces.
+
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### DECERATOR PATTERN:
+Source of learning: 
+https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm
+
+Discussion:
+Decorator pattern allows a user to add new functionality to an existing object without altering its structure. This type of design pattern comes under structural pattern as this pattern acts as a wrapper to existing class.
+
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### FACADE PATTERN:
+Source of learning: 
+https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
+Discussion:
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### FLUENT INTERFACE:
+Source of learning: 
+
+Discussion:
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### FLUENT INTERFACE:
+Source of learning: 
+
+Discussion:
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### FLUENT INTERFACE:
+Source of learning: 
+
+Discussion:
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### FLUENT INTERFACE:
+Source of learning: 
+
+Discussion:
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### FLUENT INTERFACE:
+Source of learning: 
+
+Discussion:
+Where to use: 
+
+
+Merits: 
+
+Demerits:
+
+### FLUENT INTERFACE:
+Source of learning: 
+
+Discussion:
+Where to use: 
+
+
+Merits: 
+
+Demerits:
